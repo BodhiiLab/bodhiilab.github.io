@@ -3,15 +3,14 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>BODHI Lab · Interpretable and Trustworthy AI for Biomedicine</title>
-  <meta name="description" content="BODHI Lab at Stony Brook University builds interpretable, trustworthy AI for biological systems, from genomic foundation models to evidence-based reasoning about disease.">
+  <title>BODHI Lab · Launching November 2026</title>
+  <meta name="description" content="BODHI Lab at the AI Innovation Institute (AI3), Stony Brook University: interpretable, trustworthy AI for scientific discovery. Launching November 2026.">
   <meta name="theme-color" content="#F7F3E9" media="(prefers-color-scheme: light)">
   <meta name="theme-color" content="#1B2A4E" media="(prefers-color-scheme: dark)">
-  <meta property="og:title" content="BODHI Lab · Interpretable and Trustworthy AI for Biomedicine">
-  <meta property="og:description" content="Interpretable and trustworthy AI for biomedicine.">
+  <meta property="og:title" content="BODHI Lab · Launching November 2026">
+  <meta property="og:description" content="Interpretable, trustworthy AI for scientific discovery. AI Innovation Institute (AI3), Stony Brook University.">
   <meta property="og:image" content="assets/img/logo-light.svg">
   <link rel="canonical" href="https://bodhiilab.github.io/">
-  <meta property="og:url" content="https://bodhiilab.github.io/">
   <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,9 +19,18 @@
   <script>
     try { var t = localStorage.getItem('bodhi-theme'); if (t) document.documentElement.setAttribute('data-theme', t); } catch (e) {}
   </script>
+  <style>
+    .soon { min-height: calc(100vh - 68px - 120px); display: flex; align-items: center; }
+    .launch {
+      display: inline-block; margin: 0 0 1.6rem; padding: 6px 14px; border-radius: 999px;
+      border: 1px solid var(--line); background: var(--card);
+      font-size: 0.85rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--accent); font-weight: 600;
+    }
+    .affil { font-size: 0.98rem; color: var(--text-soft); margin: -0.4rem 0 1.4rem; }
+    .contact { margin-top: 1.6rem; font-size: 0.95rem; color: var(--text-soft); }
+  </style>
 </head>
 <body>
-<a class="skip-link" href="#main">Skip to content</a>
 
 <header class="site-header">
   <nav class="wrap nav" aria-label="Main">
@@ -30,33 +38,23 @@
       <img src="assets/img/favicon.svg" alt="">
       <b>BODHI</b><span>LAB</span>
     </a>
-    <ul class="nav-links" id="nav-links">
-      <li><a href="name.html">Why BODHI?</a></li>
-      <li><a href="research.html">Research</a></li>
-      <li><a href="publications.html">Publications</a></li>
-      <li><a href="people.html">People</a></li>
-      <li><a href="news.html">News</a></li>
-      <li><a href="join.html">Join</a></li>
-    </ul>
     <div class="nav-tools">
       <button class="icon-btn" id="theme-btn" aria-label="Switch light or dark theme">&#9788;</button>
-      <button class="icon-btn menu-btn" id="menu-btn" aria-label="Open menu" aria-expanded="false">&#9776;</button>
     </div>
   </nav>
 </header>
 
-<main id="main">
-  <section class="hero">
+<main id="main" class="soon">
+  <section class="hero" style="width:100%">
     <div class="wrap hero-grid">
       <div>
-        <div class="eyebrow">BODHI Lab · Stony Brook University</div>
+        <div class="launch">Launching November 2026</div>
+        <div class="eyebrow">BODHI Lab</div>
         <h1>AI that <em>explains</em> biology.</h1>
-        <p class="lede">We build interpretable and trustworthy AI for biological systems, so that every prediction comes with evidence, stated uncertainty, and a hypothesis a scientist can test.</p>
+        <p class="affil">AI Innovation Institute (AI3) · Stony Brook University</p>
+        <p class="lede">We are building interpretable, trustworthy AI for scientific discovery, with a focus on genomics: models that go beyond accurate predictions to explain the biological mechanisms behind them.</p>
         <p class="acronym"><b>B</b>uilding <b>O</b>bservable, <b>D</b>ependable, <b>H</b>uman-interpretable <b>I</b>ntelligence</p>
-        <div class="cta">
-          <a class="btn primary" href="research.html">Explore our research</a>
-          <a class="btn" href="join.html">Join the lab</a>
-        </div>
+        <p class="contact">Interested in joining or collaborating? Our full website, with details on how to join, is coming soon. Meanwhile, reach out at <a href="mailto:pratik.dutta@stonybrook.edu">pratik.dutta@stonybrook.edu</a>.</p>
       </div>
       <div class="tree-box">
         <noscript><img src="assets/img/logo-light.svg" alt="Bodhi tree whose trunk is a DNA double helix"></noscript>
@@ -65,60 +63,32 @@
       </div>
     </div>
   </section>
-
-  <section class="alt">
-    <div class="wrap">
-      <div class="section-head reveal">
-        <div class="eyebrow">What we do</div>
-        <h2>From prediction to understanding</h2>
-        <p>Foundation models can read the genome, but they rarely tell us why. BODHI Lab builds models that learn the language of DNA, then opens them up to recover the mechanisms behind disease.</p>
-      </div>
-      <div class="cards three" id="themes" data-compact="true"></div>
-      <p class="more reveal"><a href="research.html">All research themes and projects</a></p>
-    </div>
-  </section>
-
-  <section class="band">
-    <div class="wrap">
-      <div class="section-head reveal">
-        <div class="eyebrow">Featured projects</div>
-        <h2>From models to discovery</h2>
-      </div>
-      <div class="projects" id="projects-grid" data-limit="3"></div>
-      <p class="more reveal"><a class="on-band" href="research.html#projects">See all projects</a></p>
-    </div>
-  </section>
-
-  <section>
-    <div class="wrap">
-      <div class="section-head reveal">
-        <div class="eyebrow">News</div>
-        <h2>Recent updates</h2>
-      </div>
-      <ul class="news reveal" id="news-list" data-limit="3"></ul>
-      <p class="more"><a href="news.html">All news</a></p>
-    </div>
-  </section>
-
-  <section class="join alt">
-    <div class="wrap reveal">
-      <div class="eyebrow">Join us</div>
-      <h2>Curious about why models work?</h2>
-      <p>BODHI Lab is building a small, collaborative group of students and postdocs who enjoy both machine learning and biology.</p>
-      <a class="btn primary" href="join.html">How to join</a>
-    </div>
-  </section>
-
 </main>
 
 <footer>
   <div class="wrap foot">
-    <div><span class="motto">Understanding, rooted in evidence.</span><br>&copy; <span id="year"></span> BODHI Lab · Stony Brook University, New York</div>
-    <div><a href="name.html">The name</a> · <a href="https://github.com/BodhiiLab">GitHub</a> · <a href="https://duttaprat.github.io/">Pratik Dutta</a></div>
+    <div><span class="motto">Understanding, rooted in evidence.</span><br>&copy; 2026 BODHI Lab · Stony Brook University, New York</div>
+    <div><a href="https://github.com/BodhiiLab">GitHub</a> · <a href="https://duttaprat.github.io/">Pratik Dutta</a></div>
   </div>
 </footer>
 
 <script src="assets/js/bodhi-tree.js"></script>
-<script src="assets/js/main.js"></script>
+<script>
+  (function () {
+    var svg = document.getElementById('bodhi-tree');
+    if (svg && window.BodhiTree) window.BodhiTree.mount(svg);
+    var btn = document.getElementById('theme-btn');
+    if (!btn) return;
+    btn.addEventListener('click', function () {
+      var root = document.documentElement;
+      var cur = root.getAttribute('data-theme');
+      if (!cur) cur = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      var next = cur === 'dark' ? 'light' : 'dark';
+      root.setAttribute('data-theme', next);
+      try { localStorage.setItem('bodhi-theme', next); } catch (e) {}
+      window.dispatchEvent(new Event('bodhi-theme'));
+    });
+  })();
+</script>
 </body>
 </html>
